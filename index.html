@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Necati Kocabas</title>
+        <link rel="stylesheet" href="styles.css">
         <script>
             var cn;
             //= document.getElementById('cw');
@@ -39,7 +40,7 @@
                     var t = new ob(innerWidth / 2,innerHeight / 2,5,"red",Math.random() * 200 + 20,2);
                     a.push(t);
                 }
-                //cn.style.backgroundColor = "#700bc8";
+                // cn.style.backgroundColor = "#700bc8";
 
                 c.lineWidth = "2";
                 c.globalAlpha = 0.5;
@@ -95,7 +96,7 @@
             }
             function anim() {
                 requestAnimationFrame(anim);
-                c.fillStyle = "rgba(0,0,0,0.05)";
+                c.fillStyle = "rgba(221, 189, 152, 0.05)";
                 c.fillRect(0, 0, cn.width, cn.height);
                 a.forEach(function(e, i) {
                     e.dr();
@@ -112,11 +113,41 @@
             body {
                 margin: 0;
                 padding: 0;
-                background-color: rgba(0,0,0,0.05);
+                background-color: rgba(221, 189, 152, 0.05);
+                /* background-image: url("sample.jpg"); */
             }
         </style>
     </head>
     <body>
+        <div class="flex">
+            <h1>
+                Hi, this is Necati 👋
+            </h1>
+            <h6>DevOps Engineer</h6>
+            <p>
+                A DevOps Engineer who loves coding, dealing with bugs and is passionate about improving software expertise. 
+            </p>
+
+            <p>
+                Is highly driven to learn about new technology and eager to implement new knowledge. Passionate and committed to expanding skills in this IT area. Dedicated to continue improving in the IT area, as well as to adjusting skills to this dynamic market.
+            </p>
+
+            <p>
+                Able to grasp new concepts quickly and efficiently and finds getting around in new enterprises and environments quick and natural. It does not take much time for me to be fluent in new organization.
+            </p>
+
+            <br/>
+            <span>
+                Feel free to contact with me!
+                <p>
+                    email: necatikcbs@gmail.com
+                </p>
+                <p>
+                    phone: +905375535060
+                </p>
+            </span>
+            
+        </div>
         <canvas id="cw"></canvas>
     </body>
 </html>
